@@ -2,7 +2,7 @@
 Data Source- https://www.kaggle.com/c/siim-isic-melanoma-classification
 
 
-| Experiment | Model Inputs | Feature Engineering |Model Chosen | Hyperparameters |LB Score |
+| Experiment | Model Inputs | Image Augmentation |Model Chosen | Hyperparameters |LB Score |
 | :---:         |       ---: | :---       | :---         |     :---:      |          ---: |
 | TPU   |  Metadata & Images | |EfficientNetB3 | Maximum character sequence considered=128|  0.8856  |
 | AutoML + vgg16 attention   | Metadata & Images | | XGB & vgg16 with attention| Maximum character sequence considered=128|  0.9395  |
