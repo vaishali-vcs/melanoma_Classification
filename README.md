@@ -2,7 +2,7 @@
 Data Source- https://www.kaggle.com/c/siim-isic-melanoma-classification
 
 
-| Experiment | Model Inputs | Image Augmentation |Model Chosen | Hyperparameters |LB Score |
+| Experiment | Model Inputs | Image Augmentation |Model Chosen | Comments |LB Score |
 | :---:         |       ---: | :---       | :---         |     :---:      |          ---: |
 |  <p align="left">TPU</p>   |   <p align="left">Metadata & Images(384x384)</p> | <p align="left">randomly flip image left/right & up/down<br>randomly set hue<br>randomly set saturation<br>randomly set contrast<br>randomly set brightness<br>data CutMix</p>| <p align="left">EfficientNetB3</p> | <p align="left">LR= 1e-3<br>loss=Focal Loss<br>epochs= 15<br>Batch Size=16</p> |  0.8856  |
 |  <p align="left">AutoML + vgg16 attention</p>   |  <p align="left">Metadata & Images(512x512)</p> | <p align="left">Rotate images by 10 degrees<br>reverse 50% of Train<br>Resize<br>Normalize<br>CenterCrop<br>Random Rotation & Horizontal Flip</p> | <p align="left">XGB & vgg16 with attention</p> | <p align="left">LR=1e-4<br> loss=Focal Loss</p> |0.9395  |
